@@ -1,0 +1,135 @@
+#title{
+  height: 100%;
+  /*! background-color: #f61e83; */
+  /*! background-image:url(../img/title1.png), linear-gradient(-5.4deg, #fbf2f5 49.8%, #937e64 50%); */
+  /*! background-position: center,center; */
+  /*! background-repeat: no-repeat; */
+  /*! background-size:30%,100%; */
+  /*! transition: all 0.7s; */
+  /*! display: flex; */
+  /*! justify-content: center; */
+  /*! text-align: center; */
+  /*! flex-direction: column; */
+}
+#title:hover{
+  background-size:10%,100%;
+}
+#title .wrap{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#title:hover .wrap::before{
+  font-size: 90px;
+  opacity: 1;
+  transform:translateY(-140px) rotate(-5.4deg);
+}
+
+#title ul.slide{
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 200%;
+}
+#title ul.slide li{
+  height: 100%;
+  background-position: center,center;
+  background-repeat: no-repeat;
+  background-size: 30%,100%;
+  transition: all 0.7s;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+}
+#title ul.slide li:nth-child(1){
+  background-color: #f61e83;
+  background-image: url(../img/title1.png), linear-gradient(-5.4deg, #fbf2f5 49.8%, #937e64 50%);
+}
+#title ul.slide li:nth-child(1)::before{
+  content: "로스팅 플랜트";
+  color: #fff;
+  font-size: 40px;
+  opacity: 0;
+  transition:all 0.7s;
+  text-shadow:1px 2px 5px #333;
+  display: block;
+  
+}
+#title ul.slide li:nth-child(2){
+  background-color: #f61e83;
+  background-image: url(../img/title2.png);
+  background-size: cover;
+}
+#title ul.slide li:nth-child(2)::before {
+  content: "디저트 플랜트";
+  color: #fff;
+  font-size: 40px;
+  opacity: 0;
+  transition: all 0.7s;
+  text-shadow: 1px 2px 5px #333;
+  display: block;
+}
+#title span.control{
+  width: 200px;
+  height: 50px;
+  display: block;
+  background-color: #605c5e;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 100px);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+#title span.control a{
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+#title span.control a:nth-child(1)::before{
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  transform:translateY(4px) rotate(45deg) translateX(-2px);
+  transform-origin: 100% 100%;
+}
+#title span.control a:nth-child(1)::after{
+  content: "";
+  width: 24px;
+  height: 3px;
+  display: block;
+  background-color: #fff;
+}
+#title span.control a:nth-child(2)::before{
+  content: "";
+  width: 24px;
+  height: 3px;
+  display: block;
+  background-color: #fff;
+  transform:translateY(10px);
+}
+#title span.control a:nth-child(2)::after{
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  transform: translateY(21px) rotate(-45deg) translateX(31px);
+  transform-origin: 0% 100%;
+}
+
+
+
+
+
+
+ 

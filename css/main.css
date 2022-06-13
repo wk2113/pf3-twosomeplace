@@ -1,0 +1,476 @@
+main{
+  height:500%;
+}
+section{
+  height: 20%;
+}
+#mainFooter{
+  height: 100%;
+}
+section>.wrap{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* 비전 */
+#vision{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: calc((100% - 1400px) / 2);
+}
+#vision::before{
+  content: "";
+  display: block;
+  width: 700px;
+  height: 400px;
+  background-image: url(https://images.samsung.com/is/image/samsung/p5/sec/aboutsamsung/2017/samsung-main-vision-large.jpg?$ORIGIN_JPG$);
+  background-size: cover;
+  position: relative;
+  left: 100px;
+  z-index: 2;
+  top: -100px;
+}
+#vision .wrap{
+  background-color: #eee;
+  padding: 100px 100px 100px 200px;
+  width: fit-content;
+  position: relative;
+  margin: initial;
+  text-align: center;
+  height: auto;
+}
+#vision .wrap::before{
+  content:"";
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  border: 1px solid;
+  left: calc((100% - 700px) / 2);
+  top: calc((100% - 400px) / 2);
+}
+#vision hgroup{
+  
+}
+#vision hgroup h2{
+  
+}
+#vision hgroup h3{
+  margin: 20px 0;
+}
+#vision hgroup h4{
+  
+}
+#vision a{
+
+}
+
+/* 메뉴스토리 */
+#menustory {
+  background-color: #eee;
+}
+#menustory .wrap {
+  height: 100%;
+  width: 100%;
+  padding-left: calc((100% - 1100px) / 2);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+#menustory h2 {
+  position: relative;
+  z-index: 1;
+}
+#menustory h2::after{
+ content: ""; 
+ width: 20px;
+ height: 20px;
+ display: inline-block;
+ background-color: red;
+ margin-left: 10px;
+}
+#menustory ul.list {
+  position: relative;
+  padding-top: 60px;
+}
+#menustory ul.list>li {
+  
+  margin-bottom: 30px;
+}
+#menustory ul.list li h3 {
+  width: 40%;
+  font-size: 21px;
+}
+#menustory ul.list li h3 a {
+  font-size: 16px;
+  line-height: 1.4;
+}
+#menustory ul.list li h3 a span {
+  border-bottom: 2px solid #9e9898;
+  width: fit-content;
+  padding-bottom: 3px;
+}
+#menustory ul.list li:not(:nth-child(1)) h3 a{
+ font-size: 0;
+}
+#menustory ul.list li:not(:nth-child(1)) h3 a span{
+  color: #ccc;
+  border-bottom:none;
+}
+#menustory ul.list li div.listin {
+  position: absolute;
+  left: 40%;
+  top: -40px;
+  width: 60%;
+}
+#menustory ul.list li ul {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+#menustory ul.list li ul li {
+  
+  width: 15%;
+  position: relative;
+}
+#menustory ul.list li ul li:nth-child(1){
+  
+  width: 55%;
+}
+#menustory ul.list li ul li a {
+  
+  display: block;
+}
+#menustory ul.list li ul li a img {
+  width: 100%;
+}
+#menustory ul.list li ul li h4 {
+  background-color: #000;
+  color: #fff;
+  line-height: 3;
+  text-align: center;
+  width: 300px;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 150px);
+}
+#menustory ul.list li ul li:not(:nth-child(1)) h4{
+  display: none;
+}
+#menustory span.control{
+  width: 266px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  bottom: -23px;
+  left: calc(50% - 328px);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+#menustory li:not(:nth-child(1)) span.control{
+  
+  display: none;
+}
+#menustory span.control a{
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+#menustory span.control a:nth-child(1)::before{
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  transform:translateY(4px) rotate(45deg) translateX(-2px);
+  transform-origin: 100% 100%;
+}
+#menustory span.control a:nth-child(1)::after{
+  content: "";
+  width: 24px;
+  height: 3px;
+  display: block;
+  background-color: #fff;
+}
+#menustory span.control a:nth-child(2)::before{
+  content: "";
+  width: 24px;
+  height: 3px;
+  display: block;
+  background-color: #fff;
+  transform:translateY(10px);
+}
+#menustory span.control a:nth-child(2)::after{
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  transform: translateY(21px) rotate(-45deg) translateX(31px);
+  transform-origin: 0% 100%;
+}
+
+/* 에이리스트 */
+#alist {
+  background-image: linear-gradient(354.6deg, #f8dec6 25%,#e0bea2 25.2%);
+  position: relative;
+}
+#alist::before{
+ content:"ALIST"; 
+ font-size: 90px;
+ font-weight: 900;
+ letter-spacing: 29px;
+ position: absolute;
+ left: 84%;
+ transform: rotate(90deg);
+ transform-origin: 0 100%;
+ color: #e0bea2;
+ text-shadow: 2px -5px 1px #f8dec6;
+}
+#alist .wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: calc((100% - 1100px) / 2);
+  box-sizing: border-box;
+  background-image: url(../img/alist.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 84%;
+  background-size: 36%;
+}
+#alist hgroup {
+  
+}
+#alist hgroup h2 {
+  
+}
+#alist hgroup h3 {
+  
+  line-height: 1.3;
+}
+#alist hgroup h4 {
+}
+#alist p {
+  color: #666;
+  width: 37%;
+  line-height: 1.4;
+}
+
+/* support */
+#support {
+  
+}
+#support .wrap {
+  width: 100%;
+  padding-left: calc((100% - 1100px) / 2);
+  box-sizing: border-box;
+}
+#support h2 {
+  position: relative;
+}
+#support h2 span {
+  
+}
+#support .list {
+  margin-left: 36%;
+  width: 64%;
+  overflow: hidden;
+  margin-top: -48px;
+  position: relative;
+}
+#support .list ul {
+  display: flex;
+  width: 400%;
+}
+#support .list ul li {
+  width: 25%;
+}
+#support .list ul li::before{
+  content: "";
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  background-image: url(../img/support1.jpg);
+  background-size: cover;
+  float: left;
+}
+#support .list ul li h3 {
+  float: left;
+  width: calc(100% - 350px);
+  padding-left: 40px;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+#support .list ul li h3 a {
+  text-decoration: underline;
+}
+#support .list ul li:nth-child(1) h3 a::before{
+  content: "";
+  background-image: url(../img/su1.png);
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+#support .list ul li p {
+  float: left;
+  width: calc(100% - 350px);
+  padding-left: 40px;
+  box-sizing: border-box;
+  padding-right: 163px;
+}
+#support .list span.control {
+  position: absolute;
+  bottom: 20px;
+  left: 390px;
+  width: 195px;
+  line-height: 2.2;
+  background-color: #666;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 13px;
+  box-sizing: border-box;
+}
+
+#support .list span.control a{
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+#support .list span.control a:nth-child(1){
+  justify-content: flex-start;
+}
+#support .list span.control a:nth-child(2){
+  justify-content: flex-end;
+}
+#support .list span.control a:nth-child(1)::before{
+  content: "";
+  border: 8px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 0px solid transparent;
+}
+#support .list span.control a:nth-child(1)::after{
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+}
+#support .list span.control a:nth-child(2)::before{
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+}
+#support .list span.control a:nth-child(2)::after{
+  content: "";
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #fff;
+  border-right: 0px solid transparent;
+}
+
+/* 프랜차이즈 */
+#franchise {
+ 
+  background-color: #f5f5f5;
+}
+#franchise .wrap {
+  text-align: center;
+}
+#franchise hgroup {
+ 
+}
+#franchise hgroup h2 {
+ 
+}
+#franchise hgroup h3 {
+ 
+}
+#franchise hgroup h3 span {
+ 
+}
+#franchise p {
+ 
+}
+#franchise ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#franchise ul li {
+  position: relative;
+}
+#franchise ul li::before{
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background-color: #000;
+  position: absolute;
+  transition: all 0.5s;
+}
+#franchise ul li:hover::before{
+ width: 100%; 
+}
+#franchise ul li a {
+  background-color: #fff;
+  border: 2px solid;
+  width: 250px;
+  display: block;
+  line-height: 2.2;
+  text-align: left;
+  padding-left: 24px;
+  box-sizing: border-box;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 24px;
+  transition:all 0.5s;
+}
+#franchise ul li:hover a{
+  background-color: transparent;
+}
+#franchise ul li a:hover{
+  color:white;
+}
+#franchise ul li a::before{
+  content: "";
+  width: 3px;
+  height: 13px;
+  display: inline-block;
+  background-color: #000;
+  position: absolute;
+  right: 27px;
+  top: 11px;
+  transform: rotate(-45deg);
+  transition:all 0.5s;
+}
+#franchise ul li a:hover::before{
+ background-color: white; 
+}
+#franchise ul li a::after{
+  content: "";
+  width: 26px;
+  height: 4px;
+  display: inline-block;
+  background-color: #000;
+  transition:all 0.5s;
+}
+#franchise ul li a:hover::after{
+ background-color: white; 
+}
